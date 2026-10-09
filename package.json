@@ -1,0 +1,33 @@
+{
+  "name": "rohan",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "server": "node server/index.js",
+    "build": "vite build && node server/scripts/encrypt_images.js",
+    "start": "node server/index.js",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "encrypt-images": "node server/scripts/encrypt_images.js",
+    "test:security": "node server/tests/security.test.js"
+  },
+  "dependencies": {
+    "canvas-confetti": "^1.9.4",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^18.0.6",
+    "express": "^5.2.1",
+    "framer-motion": "^14.0.0",
+    "lucide-react": "^1.52.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "oxlint": "^1.81.0",
+    "vite": "^8.3.0"
+  }
+}
